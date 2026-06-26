@@ -730,4 +730,938 @@
     }
     .exp-stat {
       text-align: center;
-      pa
+      padding: 24px 32px;
+      background: linear-gradient(135deg, var(--blue-dark), var(--blue));
+      border-radius: 14px;
+      color: var(--white);
+      min-width: 130px;
+    }
+    .exp-stat .num {
+      font-family: var(--font-display);
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: var(--green);
+      line-height: 1;
+    }
+    .exp-stat .lbl { font-size: 0.78rem; opacity: 0.7; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.07em; }
+
+    /* ===== CONTACT ===== */
+    #contact { padding: 100px 0; background: var(--gray-100); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 50px;
+    }
+    .contact-info h3 {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--blue-dark);
+      margin-bottom: 8px;
+    }
+    .contact-info p { color: var(--gray-500); line-height: 1.7; margin-bottom: 28px; }
+    .contact-items { display: flex; flex-direction: column; gap: 16px; margin-bottom: 28px; }
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    .contact-item-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--blue);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-item-icon i { color: var(--white); font-size: 1rem; }
+    .contact-item-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--gray-500); margin-bottom: 2px; }
+    .contact-item-val { font-weight: 600; color: var(--gray-800); font-size: 0.95rem; }
+    .contact-persons { display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; }
+    .contact-person {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      background: var(--white);
+      border-radius: 10px;
+      border: 1px solid var(--gray-200);
+    }
+    .contact-person i { color: var(--blue); }
+    .cp-name { font-weight: 600; font-size: 0.88rem; color: var(--gray-800); }
+    .cp-num { font-size: 0.82rem; color: var(--gray-500); }
+    .contact-form-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 36px;
+      box-shadow: var(--shadow-card);
+      border: 1px solid var(--gray-200);
+    }
+    .contact-form-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--blue-dark);
+      margin-bottom: 24px;
+    }
+    .form-group { margin-bottom: 18px; }
+    .form-group label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--gray-800);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 2px solid var(--gray-200);
+      border-radius: 8px;
+      font-family: var(--font-main);
+      font-size: 0.92rem;
+      color: var(--gray-800);
+      background: var(--gray-100);
+      transition: var(--transition);
+      outline: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--blue);
+      background: var(--white);
+      box-shadow: 0 0 0 3px rgba(18,78,150,0.08);
+    }
+    .form-group textarea { height: 110px; resize: vertical; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+    /* ===== FOOTER ===== */
+    #footer {
+      background: var(--gray-900);
+      padding: 70px 0 0;
+      color: rgba(255,255,255,0.65);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.8fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+    .footer-brand .nav-logo-name { font-size: 1.4rem; }
+    .footer-brand .nav-logo-tag { display: block; margin-top: 2px; }
+    .footer-brand p {
+      margin-top: 18px;
+      font-size: 0.88rem;
+      line-height: 1.75;
+    }
+    .footer-social { display: flex; gap: 10px; margin-top: 20px; }
+    .social-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.07);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.9rem;
+      transition: var(--transition);
+    }
+    .social-btn:hover { background: var(--blue); color: var(--white); }
+    .footer-col h4 {
+      color: var(--white);
+      font-weight: 700;
+      font-size: 0.92rem;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-bottom: 18px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid rgba(183,224,0,0.25);
+    }
+    .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul li a {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.55);
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .footer-col ul li a:hover { color: var(--green); padding-left: 4px; }
+    .footer-col ul li a i { font-size: 0.65rem; color: var(--green); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 22px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer-bottom p { font-size: 0.82rem; }
+    .footer-bottom .made { font-size: 0.82rem; color: rgba(255,255,255,0.35); }
+    .footer-badges { display: flex; gap: 10px; flex-wrap: wrap; }
+    .footer-badge {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 6px;
+      padding: 4px 12px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.5);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* ===== WHATSAPP FLOAT ===== */
+    #wa-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 999;
+      width: 58px;
+      height: 58px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 28px rgba(37,211,102,0.50);
+      cursor: pointer;
+      transition: var(--transition);
+      animation: waPulse 2.5s infinite;
+    }
+    #wa-float:hover { transform: scale(1.12); box-shadow: 0 10px 36px rgba(37,211,102,0.65); }
+    #wa-float i { color: var(--white); font-size: 1.6rem; }
+    @keyframes waPulse {
+      0%, 100% { box-shadow: 0 6px 28px rgba(37,211,102,0.5); }
+      50% { box-shadow: 0 6px 28px rgba(37,211,102,0.5), 0 0 0 12px rgba(37,211,102,0.12); }
+    }
+
+    /* ===== SCROLL ANIMATIONS ===== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ===== MOBILE NAV ===== */
+    @media (max-width: 900px) {
+      .nav-links { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; right: 0; background: rgba(10,53,112,0.98); padding: 16px; gap: 4px; }
+      .nav-links.open { display: flex; }
+      .nav-hamburger { display: flex; }
+      .hero-content { grid-template-columns: 1fr; gap: 40px; padding: 60px 0; }
+      .hero-visual { display: none; }
+      .about-grid { grid-template-columns: 1fr; }
+      .about-img-block { display: none; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+    }
+    @media (max-width: 600px) {
+      .hero-stats { gap: 20px; }
+      .hero-btns { flex-direction: column; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .industry-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* ===== LOGO IMAGE ===== */
+    .nav-logo-img {
+      height: 52px;
+      width: auto;
+      display: block;
+      filter: drop-shadow(0 2px 8px rgba(0,0,0,0.25));
+      transition: var(--transition);
+    }
+    .nav-logo:hover .nav-logo-img {
+      transform: scale(1.04);
+    }
+    .footer-logo-img {
+      height: 74px;
+      width: auto;
+      border-radius: 10px;
+      margin-bottom: 14px;
+    }
+    .footer-logo-wrap {
+      margin-bottom: 4px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ===== WHATSAPP FLOAT ===== -->
+<a href="https://wa.me/917878787130?text=Hello%20Krishna%20Plastic%2C%20I%20am%20interested%20in%20your%20products." target="_blank" id="wa-float" title="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <img src="images/logo_transparent.png" alt="Krishna Plastic Logo" class="nav-logo-img" />
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#why">Why Us</a>
+        <a href="#industries">Industries</a>
+        <a href="#contact">Contact</a>
+        <a href="https://wa.me/917878787130" target="_blank" class="nav-cta">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+      </div>
+      <div class="nav-hamburger" id="hamburger" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-grid-overlay"></div>
+  <div class="hero-glow"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-badge"><i class="fas fa-star"></i> Est. 2015 — Rajkot, Gujarat, India</div>
+        <h1 class="hero-headline">
+          Precision Tile<br/>Installation<br/><span class="accent">Tools Built</span><br/>For Professionals
+        </h1>
+        <p class="hero-sub">
+          Manufacturing high-quality tile fitting tools trusted by dealers, contractors & distributors across India. Premium quality. Reliable supply. Competitive pricing.
+        </p>
+        <div class="hero-btns">
+          <a href="#products" class="btn btn-primary"><i class="fas fa-box-open"></i> View Products</a>
+          <a href="https://wa.me/917878787130?text=Hello%20Krishna%20Plastic%2C%20I%20need%20your%20catalogue." target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp Inquiry</a>
+          <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i> Contact Us</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-num">9<span>+</span></div>
+            <div class="hero-stat-label">Years Experience</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">20<span>+</span></div>
+            <div class="hero-stat-label">Products</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">4<span>+</span></div>
+            <div class="hero-stat-label">Export Countries</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card-main">
+          <img src="images/tile_pliers.jpg" alt="Tile Levelling Pliers - Krishna Plastic" loading="lazy" />
+          <div class="hero-card-label">
+            <span>Tile Leveling System</span>
+            <span class="tag">Premium Quality</span>
+          </div>
+        </div>
+        <div class="hero-cards-row">
+          <div class="hero-mini-card">
+            <img src="images/tile_spacer.jpg" alt="Tile Spacers" loading="lazy" />
+            <div class="hero-mini-label">Tile Spacers & Clips</div>
+          </div>
+          <div class="hero-mini-card">
+            <img src="images/pvc_wall_plug.jpg" alt="Hardware Products" loading="lazy" />
+            <div class="hero-mini-label">Hardware Products</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST BAR ===== -->
+<div id="trust">
+  <div class="container">
+    <div class="trust-inner">
+      <div class="trust-item"><i class="fas fa-certificate"></i> Premium Quality Guaranteed</div>
+      <div class="trust-item"><i class="fas fa-industry"></i> Made in India — Rajkot, Gujarat</div>
+      <div class="trust-item"><i class="fas fa-globe-asia"></i> Exporting to 4+ Countries</div>
+      <div class="trust-item"><i class="fas fa-handshake"></i> Dealer & Distributor Friendly</div>
+      <div class="trust-item"><i class="fas fa-boxes"></i> Bulk Manufacturing Capacity</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-block reveal">
+        <div class="about-img-main">
+          <img src="images/exhibition_photos.jpg" alt="Krishna Plastic Team at Exhibition" loading="lazy" />
+        </div>
+        <div class="about-badge-float">
+          <div class="num">2015</div>
+          <div class="lbl">Est. Since</div>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <div class="section-label">About Krishna Plastic</div>
+        <h2 class="section-title">A <span>Unique Startup</span> With An Innovative Vision</h2>
+        <p>Krishna Plastic is a unique startup from Rajkot with a philosophy of innovative ideas to make a big fortune. We believe that a good idea makes good business — and following this ideology, we have developed a wide range of high-quality plastic products that enhance home-making easier and more enjoyable.</p>
+        <p>Since 2015, we have been manufacturing precision tile installation tools and hardware products trusted by dealers, distributors, contractors, builders, and export buyers across India and internationally.</p>
+        <div class="about-features">
+          <div class="about-feature"><i class="fas fa-check-circle"></i><span class="about-feature-text">Precision Engineering</span></div>
+          <div class="about-feature"><i class="fas fa-check-circle"></i><span class="about-feature-text">Accurate Dimensions</span></div>
+          <div class="about-feature"><i class="fas fa-check-circle"></i><span class="about-feature-text">Premium Raw Materials</span></div>
+          <div class="about-feature"><i class="fas fa-check-circle"></i><span class="about-feature-text">Bulk Supply Capacity</span></div>
+          <div class="about-feature"><i class="fas fa-check-circle"></i><span class="about-feature-text">Competitive Pricing</span></div>
+          <div class="about-feature"><i class="fas fa-check-circle"></i><span class="about-feature-text">Export Ready</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRODUCTS ===== -->
+<section id="products">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Our Products</div>
+      <h2 class="section-title">Complete Range of <span>Tile Tools</span> & Hardware</h2>
+      <p class="section-subtitle">From tile spacers to leveling systems, glass suction cups to hardware accessories — we manufacture it all with precision.</p>
+      <div class="products-tabs" style="margin-top:24px;">
+        <button class="tab-btn active" onclick="filterProducts('all', this)">All Products</button>
+        <button class="tab-btn" onclick="filterProducts('tile', this)">Tile Tools</button>
+        <button class="tab-btn" onclick="filterProducts('hardware', this)">Hardware</button>
+      </div>
+    </div>
+    <div class="products-grid" id="productsGrid">
+
+      <div class="product-card reveal" data-cat="tile">
+        <div class="product-img">
+          <img src="images/tile_spacer.jpg" alt="Tile Spacer" loading="lazy" />
+          <span class="product-cat-badge">Tile Tool</span>
+        </div>
+        <div class="product-body">
+          <div class="product-name">Tile Spacer</div>
+          <div class="product-app">Maintains uniform gaps between tiles during installation</div>
+          <div class="product-specs"><span class="spec-tag">2mm–10mm</span><span class="spec-tag">White / Yellow</span><span class="spec-tag">100 pcs/pouch</span></div>
+        </div>
+        <div class="product-card-footer">
+          <a href="https://wa.me/917878787130?text=I%20am%20interested%20in%20Tile%20Spacer" target="_blank" class="inquiry-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+          <i class="fab fa-whatsapp" style="color:#25D366;font-size:1.1rem;"></i>
+        </div>
+      </div>
+      <div class="product-card reveal" data-cat="tile">
+        <div class="product-img">
+          <img src="images/tile_leveler.jpg" alt="Tile Leveling Clips" loading="lazy" />
+          <span class="product-cat-badge">Tile Tool</span>
+        </div>
+        <div class="product-body">
+          <div class="product-name">Tile Leveling Clips</div>
+          <div class="product-app">Achieves perfectly flat tile surfaces, eliminates lippage</div>
+          <div class="product-specs"><span class="spec-tag">2mm / 3mm / 4mm</span><span class="spec-tag">Yellow / White</span><span class="spec-tag">50 pcs/pouch</span></div>
+        </div>
+        <div class="product-card-footer">
+          <a href="https://wa.me/917878787130?text=I%20am%20interested%20in%20Tile%20Leveling%20Clips" target="_blank" class="inquiry-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+          <i class="fab fa-whatsapp" style="color:#25D366;font-size:1.1rem;"></i>
+        </div>
+      </div>
+      <div class="product-card reveal" data-cat="tile">
+        <div class="product-img">
+          <img src="images/tile_jack.jpg" alt="Tile Leveling Jack" loading="lazy" />
+          <span class="product-cat-badge">Tile Tool</span>
+        </div>
+        <div class="product-body">
+          <div class="product-name">Tile Leveling Jack</div>
+          <div class="product-app">Adjusts tile height precisely during installation</div>
+          <div class="product-specs"><span class="spec-tag">Orange / Black</span><span class="spec-tag">Fixed Size</span><span class="spec-tag">50 pcs/pouch</span></div>
+        </div>
+        <div class="product-card-footer">
+          <a href="https://wa.me/917878787130?text=I%20am%20interested%20in%20Tile%20Leveling%20Jack" target="_blank" class="inquiry-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+          <i class="fab fa-whatsapp" style="color:#25D366;font-size:1.1rem;"></i>
+        </div>
+      </div>
+      <div class="product-card reveal" data-cat="tile">
+        <div class="product-img">
+          <img src="images/tile_spindle.jpg" alt="Tile Spindle" loading="lazy" />
+          <span class="product-cat-badge">Tile Tool</span>
+        </div>
+        <div class="product-body">
+          <div class="product-name">Tile Spindle</div>
+          <div class="product-app">Reusable spindle system for advanced tile leveling</div>
+          <div class="product-specs"><span class="spec-tag">2mm / 3mm / 4mm</span><span class="spec-tag">Orange / White</span><span class="spec-tag">50 pcs/pouch</span></div>
+        </div>
+        <div class="product-card-footer">
+          <a href="https://wa.me/917878787130?text=I%20am%20interested%20in%20Tile%20Spindle" target="_blank" class="inquiry-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+          <i class="fab fa-whatsapp" style="color:#25D366;font-size:1.1rem;"></i>
+        </div>
+      </div>
+      <div class="product-card reveal" data-cat="tile">
+        <div class="product-img">
+          <img src="images/tile_pliers.jpg" alt="Tile Levelling Pliers" loading="lazy" />
+          <span class="product-cat-badge">Tile Tool</span>
+        </div>
+        <div class="product-body">
+          <div class="product-name">Tile Levelling Pliers</div>
+          <div class="product-app">Professional plier tool to tighten leveling wedges</div>
+          <div class="product-specs"><span class="spec-tag">Yellow / Steel</span><span class="spec-tag">Professional Grade</span></div>
+        </div>
+        <div class="product-card-footer">
+          <a href="https://wa.me/917878787130?text=I%20am%20interested%20in%20Tile%20Levelling%20Pliers" target="_blank" class="inquiry-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+          <i class="fab fa-whatsapp" style="color:#25D366;font-size:1.1rem;"></i>
+        </div>
+      </div>
+      <div class="product-card reveal" data-cat="tile">
+        <div class="product-img">
+          <img src="images/glass_suction.jpg" alt="Glass Suction Cups" loading="lazy" />
+          <span class="product-cat-badge">Tile Tool</span>
+        </div>
+        <div class="product-body">
+          <div class="product-name">Glass Suction Cups</div>
+          <div class="product-app">Heavy-duty suction cups for safe handling of glass & slabs</div>
+          <div class="product-specs"><span class="spec-tag">Yellow</span><span class="spec-tag">Heavy Duty</span><span class="spec-tag">Dual / Single</span></div>
+        </div>
+        <div class="product-card-footer">
+          <a href="https://wa.me/917878787130?text=I%20am%20interested%20in%20Glass%20Suction%20Cups" target="_blank" class="inquiry-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+          <i class="fab fa-whatsapp" style="color:#25D366;font-size:1.1rem;"></i>
+        </div>
+      </div>
+      <div class="product-card reveal" data-cat="tile">
+        <div class="product-img">
+          <img src="images/tile_trowel.jpg" alt="Tile Epoxy Trowel" loading="lazy" />
+          <span class="product-cat-badge">Tile Tool</span>
+        </div>
+        <div class="product-body">
+          <div class="product-name">Tile Epoxy Trowel</div>
+          <div class="product-app">SS & MS trowels for precise adhesive spreading</div>
+          <div class="product-specs"><span class="spec-tag">3mm / 6mm / 8mm / 10mm</span><span class="spec-tag">SS / MS Finish</span></div>
+        </div>
+        <div class="product-card-footer">
+          <a href="https://wa.me/917878787130?text=I%20am%20interested%20in%20Tile%20Epoxy%20Trowel" target="_blank" class="inquiry-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+          <i class="fab fa-whatsapp" style="color:#25D366;font-size:1.1rem;"></i>
+        </div>
+      </div>
+      <div class="product-card reveal" data-cat="tile">
+        <div class="product-img">
+          <img src="images/tile_lifting_adjuster.jpg" alt="Tile Lifting Adjuster" loading="lazy" />
+          <span class="product-cat-badge">Tile Tool</span>
+        </div>
+        <div class="product-body">
+          <div class="product-name">Tile Lifting Adjuster</div>
+          <div class="product-app">For lifting and adjusting large format tiles vertically</div>
+          <div class="product-specs"><span class="spec-tag">Yellow / Steel</span><span class="spec-tag">Spring Loaded</span></div>
+        </div>
+        <div class="product-card-footer">
+          <a href="https://wa.me/917878787130?text=I%20am%20interested%20in%20Tile%20Lifting%20Adjuster" target="_blank" class="inquiry-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+          <i class="fab fa-whatsapp" style="color:#25D366;font-size:1.1rem;"></i>
+        </div>
+      </div>
+      <div class="product-card reveal" data-cat="hardware">
+        <div class="product-img">
+          <img src="images/pvc_wall_plug.jpg" alt="PVC Wall Plug" loading="lazy" />
+          <span class="product-cat-badge" style="background:var(--green);color:var(--blue-dark);">Hardware</span>
+        </div>
+        <div class="product-body">
+          <div class="product-name">PVC Wall Plug</div>
+          <div class="product-app">Standard and butterfly PVC wall plugs for secure mounting</div>
+          <div class="product-specs"><span class="spec-tag">Standard / Butterfly</span><span class="spec-tag">White</span><span class="spec-tag">Multiple Sizes</span></div>
+        </div>
+        <div class="product-card-footer">
+          <a href="https://wa.me/917878787130?text=I%20am%20interested%20in%20PVC%20Wall%20Plug" target="_blank" class="inquiry-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+          <i class="fab fa-whatsapp" style="color:#25D366;font-size:1.1rem;"></i>
+        </div>
+      </div>
+      <div class="product-card reveal" data-cat="hardware">
+        <div class="product-img">
+          <img src="images/door_catcher.jpg" alt="Door Catcher" loading="lazy" />
+          <span class="product-cat-badge" style="background:var(--green);color:var(--blue-dark);">Hardware</span>
+        </div>
+        <div class="product-body">
+          <div class="product-name">Door Catcher</div>
+          <div class="product-app">Magnetic door stopper for cabinets and furniture</div>
+          <div class="product-specs"><span class="spec-tag">Strong Magnet</span><span class="spec-tag">White / Chrome</span></div>
+        </div>
+        <div class="product-card-footer">
+          <a href="https://wa.me/917878787130?text=I%20am%20interested%20in%20Door%20Catcher" target="_blank" class="inquiry-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+          <i class="fab fa-whatsapp" style="color:#25D366;font-size:1.1rem;"></i>
+        </div>
+      </div>
+      <div class="product-card reveal" data-cat="hardware">
+        <div class="product-img">
+          <img src="images/door_silencer_pvc_bet.jpg" alt="Door Silencer" loading="lazy" />
+          <span class="product-cat-badge" style="background:var(--green);color:var(--blue-dark);">Hardware</span>
+        </div>
+        <div class="product-body">
+          <div class="product-name">Door Silencer</div>
+          <div class="product-app">Prevents door slamming in cabinets and furniture</div>
+          <div class="product-specs"><span class="spec-tag">PVC</span><span class="spec-tag">White</span><span class="spec-tag">Multiple Sizes</span></div>
+        </div>
+        <div class="product-card-footer">
+          <a href="https://wa.me/917878787130?text=I%20am%20interested%20in%20Door%20Silencer" target="_blank" class="inquiry-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+          <i class="fab fa-whatsapp" style="color:#25D366;font-size:1.1rem;"></i>
+        </div>
+      </div>
+      <div class="product-card reveal" data-cat="hardware">
+        <div class="product-img">
+          <img src="images/buffer_pvc_washer.jpg" alt="L Corner" loading="lazy" />
+          <span class="product-cat-badge" style="background:var(--green);color:var(--blue-dark);">Hardware</span>
+        </div>
+        <div class="product-body">
+          <div class="product-name">L Corner</div>
+          <div class="product-app">L Corner, PVC Washer & PVC Bet — essential hardware accessories</div>
+          <div class="product-specs"><span class="spec-tag">PVC / White</span><span class="spec-tag">Bulk Available</span></div>
+        </div>
+        <div class="product-card-footer">
+          <a href="https://wa.me/917878787130?text=I%20am%20interested%20in%20L%20Corner" target="_blank" class="inquiry-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+          <i class="fab fa-whatsapp" style="color:#25D366;font-size:1.1rem;"></i>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY CHOOSE US ===== -->
+<section id="why">
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="section-header center reveal">
+      <div class="section-label">Why Choose Us</div>
+      <h2 class="section-title" style="color:#fff;">What Makes <span style="color:var(--green);">Krishna Plastic</span> Different</h2>
+      <p class="section-subtitle">We don't just manufacture tools — we build trust with every product we ship.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon"><i class="fas fa-medal"></i></div>
+        <div class="why-title">Premium Quality</div>
+        <div class="why-desc">Every product is manufactured with high-grade PVC and materials, tested for durability and consistent performance on-site.</div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><i class="fas fa-ruler-combined"></i></div>
+        <div class="why-title">Accurate Dimensions</div>
+        <div class="why-desc">Precision-molded products ensure exact sizing — no tolerances, no surprises. Your installations stay aligned perfectly.</div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><i class="fas fa-tags"></i></div>
+        <div class="why-title">Competitive Pricing</div>
+        <div class="why-desc">Direct manufacturer pricing with no middlemen. Better margins for dealers, distributors, and bulk buyers.</div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><i class="fas fa-truck-fast"></i></div>
+        <div class="why-title">Reliable Supply</div>
+        <div class="why-desc">Consistent stock availability from our Rajkot facility. We ensure timely delivery for your business needs.</div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><i class="fas fa-handshake"></i></div>
+        <div class="why-title">Dealer Friendly</div>
+        <div class="why-desc">Flexible order quantities, attractive dealer schemes, and responsive communication via WhatsApp and phone.</div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><i class="fas fa-globe-asia"></i></div>
+        <div class="why-title">Export Ready</div>
+        <div class="why-desc">Already exporting to Bangladesh, Nepal, Kuwait, and South Africa. International quality packaging available.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INDUSTRIES ===== -->
+<section id="industries">
+  <div class="container">
+    <div class="section-header center reveal">
+      <div class="section-label">Industries We Serve</div>
+      <h2 class="section-title">Trusted Across <span>Multiple Sectors</span></h2>
+      <p class="section-subtitle">From local tile shops to international export buyers — Krishna Plastic serves them all.</p>
+    </div>
+    <div class="industry-grid">
+      <div class="industry-card reveal">
+        <div class="ind-icon"><i class="fas fa-store"></i></div>
+        <div class="ind-name">Tile Dealers</div>
+      </div>
+      <div class="industry-card reveal">
+        <div class="ind-icon"><i class="fas fa-wrench"></i></div>
+        <div class="ind-name">Hardware Stores</div>
+      </div>
+      <div class="industry-card reveal">
+        <div class="ind-icon"><i class="fas fa-hard-hat"></i></div>
+        <div class="ind-name">Contractors</div>
+      </div>
+      <div class="industry-card reveal">
+        <div class="ind-icon"><i class="fas fa-building"></i></div>
+        <div class="ind-name">Builders</div>
+      </div>
+      <div class="industry-card reveal">
+        <div class="ind-icon"><i class="fas fa-city"></i></div>
+        <div class="ind-name">Construction Companies</div>
+      </div>
+      <div class="industry-card reveal">
+        <div class="ind-icon"><i class="fas fa-drafting-compass"></i></div>
+        <div class="ind-name">Architects</div>
+      </div>
+      <div class="industry-card reveal">
+        <div class="ind-icon"><i class="fas fa-shower"></i></div>
+        <div class="ind-name">Sanitaryware Showrooms</div>
+      </div>
+      <div class="industry-card reveal">
+        <div class="ind-icon"><i class="fas fa-ship"></i></div>
+        <div class="ind-name">Export Buyers</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPORTS ===== -->
+<section id="exports">
+  <div class="container">
+    <div class="export-inner">
+      <div class="export-text reveal">
+        <div class="section-label">Global Presence</div>
+        <h2 class="section-title">We Export To <span>4+ Countries</span></h2>
+        <p class="section-subtitle">Our quality speaks beyond borders. Krishna Plastic products are exported internationally with proper packaging and documentation.</p>
+        <div class="export-countries">
+          <div class="country-chip"><i class="fas fa-map-marker-alt"></i> Bangladesh</div>
+          <div class="country-chip"><i class="fas fa-map-marker-alt"></i> Nepal</div>
+          <div class="country-chip"><i class="fas fa-map-marker-alt"></i> Kuwait</div>
+          <div class="country-chip"><i class="fas fa-map-marker-alt"></i> South Africa</div>
+        </div>
+      </div>
+      <div class="export-stats reveal">
+        <div class="exp-stat">
+          <div class="num">9+</div>
+          <div class="lbl">Years in Business</div>
+        </div>
+        <div class="exp-stat">
+          <div class="num">20+</div>
+          <div class="lbl">Product Variants</div>
+        </div>
+        <div class="exp-stat">
+          <div class="num">4+</div>
+          <div class="lbl">Export Countries</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Contact <span>Krishna Plastic</span></h2>
+      <p class="section-subtitle">Ready to place an order or need a quotation? Reach out via WhatsApp, call, or fill the form below.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h3>Let's Do Business</h3>
+        <p>We welcome inquiries from dealers, distributors, contractors, and export buyers. Quick response guaranteed via WhatsApp.</p>
+        <div class="contact-persons">
+          <div class="contact-person">
+            <i class="fas fa-user-tie"></i>
+            <div>
+              <div class="cp-name">Manoj Patel</div>
+              <div class="cp-num">+91 78787 87130</div>
+            </div>
+          </div>
+          <div class="contact-person">
+            <i class="fas fa-user-tie"></i>
+            <div>
+              <div class="cp-name">Meet Patel</div>
+              <div class="cp-num">+91 80000 76476</div>
+            </div>
+          </div>
+          <div class="contact-person">
+            <i class="fas fa-user-tie"></i>
+            <div>
+              <div class="cp-name">Mukesh Patel</div>
+              <div class="cp-num">+91 99797 32811</div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="contact-item-label">Email</div>
+              <div class="contact-item-val">mkkpatel35@gmail.com</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="contact-item-label">Location</div>
+              <div class="contact-item-val">Rajkot (Gujarat), INDIA</div>
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.me/917878787130?text=Hello%20Krishna%20Plastic%2C%20I%20want%20to%20place%20an%20inquiry." target="_blank" class="btn btn-wa" style="width:fit-content;">
+          <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+        </a>
+      </div>
+      <div class="contact-form-card reveal">
+        <h3>Send an Inquiry</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="Ramesh Shah" />
+          </div>
+          <div class="form-group">
+            <label>Phone / WhatsApp</label>
+            <input type="tel" placeholder="+91 98765 43210" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="you@email.com" />
+        </div>
+        <div class="form-group">
+          <label>Product Interest</label>
+          <select>
+            <option value="">— Select Product —</option>
+            <option>Tile Spacer</option>
+            <option>Tile Leveling System</option>
+            <option>Tile Jack</option>
+            <option>Tile Spindle</option>
+            <option>Tile Levelling Pliers</option>
+            <option>Glass Suction Cups</option>
+            <option>Tile Epoxy Trowel</option>
+            <option>Tile Lifting Adjuster</option>
+            <option>PVC Wall Plug</option>
+            <option>Door Catcher Magnet</option>
+            <option>Hardware Products</option>
+            <option>All Products / Catalogue</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Your Message</label>
+          <textarea placeholder="Please share your requirement, quantity, and location..."></textarea>
+        </div>
+        <a href="#" onclick="sendWhatsApp(); return false;" class="btn btn-primary" style="width:100%;justify-content:center;">
+          <i class="fab fa-whatsapp"></i> Send via WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-wrap">
+          <img src="images/logo.png" alt="Krishna Plastic Logo" class="footer-logo-img" />
+        </div>
+        <p>A unique manufacturer from Rajkot, Gujarat, crafting high-quality tile fitting tools and hardware products trusted across India and internationally since 2015.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+          <a href="mailto:mkkpatel35@gmail.com" class="social-btn"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+          <li><a href="#products"><i class="fas fa-chevron-right"></i> Products</a></li>
+          <li><a href="#why"><i class="fas fa-chevron-right"></i> Why Choose Us</a></li>
+          <li><a href="#industries"><i class="fas fa-chevron-right"></i> Industries</a></li>
+          <li><a href="#exports"><i class="fas fa-chevron-right"></i> Exports</a></li>
+          <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Tile Tools</h4>
+        <ul>
+          <li><a href="#products"><i class="fas fa-chevron-right"></i> Tile Spacer</a></li>
+          <li><a href="#products"><i class="fas fa-chevron-right"></i> Tile Leveling Clips</a></li>
+          <li><a href="#products"><i class="fas fa-chevron-right"></i> Tile Jack</a></li>
+          <li><a href="#products"><i class="fas fa-chevron-right"></i> Tile Spindle</a></li>
+          <li><a href="#products"><i class="fas fa-chevron-right"></i> Glass Suction Cups</a></li>
+          <li><a href="#products"><i class="fas fa-chevron-right"></i> Tile Trowel</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="tel:+917878787130"><i class="fas fa-phone"></i> +91 78787 87130</a></li>
+          <li><a href="tel:+918000076476"><i class="fas fa-phone"></i> +91 80000 76476</a></li>
+          <li><a href="mailto:mkkpatel35@gmail.com"><i class="fas fa-envelope"></i> mkkpatel35@gmail.com</a></li>
+          <li><a href="#"><i class="fas fa-map-marker-alt"></i> Rajkot, Gujarat, India</a></li>
+        </ul>
+        <div class="footer-badges" style="margin-top:18px;">
+          <span class="footer-badge">Make in India</span>
+          <span class="footer-badge">Since 2015</span>
+          <span class="footer-badge">ISO Quality</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Krishna Plastic, Rajkot, Gujarat. All rights reserved.</p>
+      <p class="made">Designed with ❤️ in India</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+  // Navbar scroll effect
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // Mobile nav toggle
+  function toggleNav() {
+    document.getElementById('navLinks').classList.toggle('open');
+  }
+  document.querySelectorAll('#navLinks a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('navLinks').classList.remove('open');
+    });
+  });
+
+  // Scroll reveal animation
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => observer.observe(el));
+
+  // Product filter tabs
+  function filterProducts(cat, btn) {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.product-card').forEach(card => {
+      if (cat === 'all' || card.dataset.cat === cat) {
+        card.classList.remove('product-hidden');
+      } else {
+        card.classList.add('product-hidden');
+      }
+    });
+  }
+
+  // WhatsApp form send
+  function sendWhatsApp() {
+    const name = document.querySelector('input[placeholder="Ramesh Shah"]').value || 'Customer';
+    const phone = document.querySelector('input[type="tel"]').value || '';
+    const product = document.querySelector('select').value || 'General Inquiry';
+    const msg = document.querySelector('textarea').value || '';
+    const text = `Hello Krishna Plastic,\n\nName: ${name}\nPhone: ${phone}\nProduct: ${product}\nMessage: ${msg}\n\nSent from krishnaplastic.com`;
+    window.open(`https://wa.me/917878787130?text=${encodeURIComponent(text)}`, '_blank');
+  }
+</script>
+
+</body>
+</html>
